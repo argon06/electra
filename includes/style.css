@@ -1,0 +1,301 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana;
+	background: #F3F3F3;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Селекторы элементов/тегов ~~ */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.titlea a {
+	text-decoration:none;
+}
+.score {
+	margin: 0 15px 5px;
+	font: 100%/1.4 Verdana;
+}
+.equipment {
+	margin-left:-2px;
+}
+
+a img {
+	border: none;
+}
+img {
+	border: none;
+}
+a:link {
+	color: #169b63;
+	text-decoration: underline;
+}
+a:visited {
+	color: #169b63;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+/* ~~ этот контейнер фиксированной ширины окружает остальные DIV ~~ */
+.container {
+	width: 1050px;
+	background: #FFF;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 3px solid #C0C0C0;
+	border-radius: 25px 25px 25px 25px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+.intro {
+	border: 3px solid #C0C0C0;
+	border-radius: 25px 25px 25px 25px;
+	text-align: center;
+	margin: 0 150px 0 150px;
+}
+
+
+.sidebar1 {
+	float: left;
+	width: 195px;/*180*/
+	background: #fff;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 780px;
+	float: left;
+}
+.admin {
+	width: 900px;
+	margin:15px 15px 25px 15px;
+}
+.header {
+	width: 1050px;
+	background: #fff;
+	margin: 0 0px 5px 0px;
+	background-image:url(../images/header.jpg);
+	background-repeat:no-repeat;
+	padding: 20px 0 20px 0;
+	border-bottom: 3px solid #C0C0C0;
+	border-radius: 0 0 25px 25px;
+}
+.header_text {
+	color: #169b63;
+	text-align: right;
+	text-shadow: #C0C0C0 1px 1px 0;
+
+}
+.quote {
+	color: #169b63;
+	font-size: 80%;
+}
+.title {
+	color: #169b63;
+	margin-bottom: 0; 
+}
+.picture {
+	float:left;
+	margin: 5px 18px 5px 5px;
+}
+.sidebar1_text {
+	font-size: 80%;
+}
+.notification {
+	font-size: 70%;
+	color: red;
+}
+.rating {
+	border-width: 0;
+	font-size: 85%;
+	text-align: center;
+}
+.caption {
+	color: #fff;
+	background-color: #169b63;
+}
+/* ~~ Этот сгруппированный селектор выдает списки в пространстве .content ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /
+}
+
+/* Стили списка навигации   */
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #666;
+	margin-bottom: 15px;
+}
+ul.nav li {
+	border-bottom: 1px solid #666;
+}
+ul.nav a, ul.nav a:visited {
+	padding: 5px 5px 5px 15px;
+	display: block;
+	width: 175px;/*160*/
+	text-decoration: none;
+	background: #169b63;
+	color: #fff;
+	text-shadow: #C0C0C0 1px 1px 0;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background: #169b63;
+	color: #FFF;
+	text-decoration: underline;
+	/*border-right: 4px solid #C0C0C0;*/
+	text-shadow: #7c7c7c 1px 1px 0;
+}
+
+.footer_text {
+	font-size: 80%;
+	color: #169b63;
+	margin-left: 180px;
+}
+
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+#tv, #pech, #shkaff, #vityajka, #svet, #floor, #condition, #utug, #comp, #pilesos, #holodilnik, #osveshenie, #panel, #chainik, #dush, #stiralka, #osveshenie, #tochsvet {
+    position: absolute;
+    width:550px;
+    left: 35%;
+    top: 135px;
+    border:2px solid #169b63;
+    display: none;
+    z-index: 10;
+    overflow: hidden;
+    background-color:#fff;
+    color:#000;
+    text-align:center;
+    padding:5px;
+}
+
+.room {
+	text-align:center;
+}
+
+.ad {
+	width: 1050px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align:right;
+}
+
+a:link.admin, a:visited.admin, a:hover.admin , a:active.admin{
+	text-decoration:none;
+	font-size:65%;
+	margin:0;
+	color:#b8b8b8;
+}
+.delete {
+	border: 3px solid #f99;
+	border-radius: 5px;
+	background-color:#fcc;
+	margin: 15px;
+	padding: 5px;
+	width: 1000px;
+	font-size: 85%;
+	text-align: center;
+}
+
+/*----------------------------Button's style--------------------------- */
+/*                         Start button's style                         */
+/*----------------------------Button's style--------------------------- */
+a:link.button, a:visited.button, a:hover.button , a:active.button{
+	background:url(btn-l-green.png) no-repeat 0 0;
+	display:block;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	padding-left:13px;
+	color:#969696;
+	outline:none;
+	margin:0;
+}
+a:hover.button{
+	background-position:0 -45px;
+	color:#127d50;
+}
+a:active.button{
+	background-position:0 -91px;
+	color:#127d50;
+}
+a:hover.button span{
+	background-position: right -45px;
+	color:#127d50;
+}
+a:active.button span{
+	background-position: right -91px;
+	color:#127d50;
+}
+a.button span{
+	display:block;
+	text-align:center;
+	line-height:44px;
+	padding:0 5px;
+	background:url(btn-r-green.png) no-repeat right 0;
+}
+
+/*----------------------------Button's style--------------------------- */
+/*                          End button's style                          */
+/*----------------------------Button's style--------------------------- */
+
+a:link.buttonred, a:visited.buttonred, a:hover.buttonred , a:active.buttonred{
+	background:url(btn-l-red.png) no-repeat 0 0;
+	display:block;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	padding-left:13px;
+	color:#f00;
+	outline:none;
+	margin:0;
+}
+a:hover.buttonred{
+	background-position:0 -45px;
+	color:#f00;
+}
+a:active.buttonred{
+	background-position:0 -91px;
+	color:#f00;
+}
+a:hover.buttonred span{
+	background-position: right -45px;
+	color:#f00;
+}
+a:active.buttonred span{
+	background-position: right -91px;
+	color:#f00;
+}
+a.buttonred span{
+	display:block;
+	text-align:center;
+	line-height:44px;
+	padding:0 5px;
+	background:url(btn-r-red.png) no-repeat right 0;
+}
